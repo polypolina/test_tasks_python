@@ -45,7 +45,7 @@ def process_data(data, date1, date2):
     v_beg_period = v_w
     for i in range(len(data)):
         period = datetime.fromisoformat(data[i]['date'])
-        #print(period)
+        print(period)
         if date2 > period > date1:
             if data[i]['action'] == 'top':
                 numb_top_up += 1
