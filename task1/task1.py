@@ -23,7 +23,7 @@ def main():
         base = sys.argv[2]
         validate(nb, base)
     except (IndexError, ValueError):
-        print("Использование: task1.py arg1 - integer arg2 - sting (arg2 must contain unique characters)")
+        print("Использование: task1.py arg1 - number to convert arg2 - base of system (arg2 must contain unique characters)")
     else:
         print(ito_base(nb, base))
 
